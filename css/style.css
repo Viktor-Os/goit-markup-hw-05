@@ -324,7 +324,6 @@ body {
   gap: 24px;
 }
 .our-social {
-  
   width: 40px;
   height: 40px;
 }
@@ -336,7 +335,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: #4d5ae5;
-   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social {
   fill: #f4f4fd;
@@ -367,7 +366,6 @@ body {
   margin-bottom: 72px;
 }
 .portfolio-row {
- 
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   overflow: hidden;
@@ -417,14 +415,14 @@ body {
   background-color: #4d5ae5;
   width: 100%;
   height: 100%;
- transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateY(100%);
 }
 .portfolio-row:hover .overlay-text {
   transform: translateY(0%);
 }
 .portfolio-row:hover {
-   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 /* #endregion */
@@ -432,7 +430,6 @@ body {
 /* ============== footer ============= */
 
 .footer {
-  
   padding: 100px 0;
   background-color: #2e2f42;
   margin-left: auto;
@@ -509,4 +506,77 @@ body {
 
 .icon-stale-footer {
   fill: #f4f4fd;
+}
+/* ==========BACKDROP STALE=========== */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999999;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 250ms linear, visibility 250ms linear;
+}
+.backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+/* ============ MODAL STALE============ */
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 408px;
+  min-height: 584px;
+  border-radius: 4px;
+  background: #fcfcfc;
+  padding: 72px 24px 24px 24px;
+}
+.modal-icon-click {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid rgba(231, 233, 252, 1);
+
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  padding: 0;
+
+  line-height: 0;
+
+  stroke: #2e2f42;
+}
+.modal-icon-click:hover,
+.modal-icon-click:focus {
+  background-color: rgba(64, 75, 191, 1);
+  fill: rgba(255, 255, 255, 1);
+  stroke: rgba(255, 255, 255, 1);
+  transition: 250ms linear;
+}
+
+.form-list {
+  width: 360px;
+  color: #2e2f42;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5em;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+.form-input {
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+background-color: transparent;
+padding-left: 38px;
 }
