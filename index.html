@@ -697,16 +697,30 @@
           </div>
           <div class="review-form-checkbox">
             <input
-              class="form-input-checkbox"
+              class="form-input-checkbox visually-hidden"
               id="user-click"
               name="user-click"
               type="checkbox"
               value="true"
               required
             />
-            <label class="form-label-checkbox" for="user-click"
-              >I accept the terms and conditions of the
-              <a href="">Privacy Policy</a></label
+            <label class="form-label-checkbox" for="user-click">
+              <span class="form-checkbox">
+                <svg
+                  class="form-icon-clicks-checkbox"
+                  width="10"
+                  height="8"
+                  aria-label="icon clicks"
+                >
+                  <use
+                    class="icon-clicks-checkbox"
+                    href="./images/icons.svg#icon-Vector"
+                  ></use>
+                </svg>
+              </span>
+              <span class="paragraph-click">I accept the terms and conditions of the
+              <a class="paragraph-click-link" href="">Privacy Policy</a></label</span>
+              
             >
           </div>
           <button class="form-submit" type="submit">Send</button>
