@@ -617,21 +617,19 @@ body {
   line-height: 0;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  stroke: #2e2f42;
+  
 }
 .modal-icon-click:hover,
 .modal-icon-click:focus {
-  background-color: rgba(64, 75, 191, 1);
+  background-color: #404bbf;
   border: none;
-}
-.modal-icon {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal-icon-window:hover,
-.modal-icon-window:focus {
   fill: #ffffff;
 }
- 
+.modal-icon {
+  
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .form-list {
   width: 360px;
   color: #2e2f42;
